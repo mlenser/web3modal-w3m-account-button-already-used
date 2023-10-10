@@ -11,6 +11,7 @@
     "format": "prettier --log-level warn --check ."
   },
   "dependencies": {
+    "@radix-ui/react-dialog": "^1.0.5",
     "@web3modal/wagmi": "^3.1.0",
     "next": "13.5.4",
     "react": "^18",
