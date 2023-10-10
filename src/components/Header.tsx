@@ -8,8 +8,8 @@ export const Header = () => {
   return (
     <div className="flex flex-col gap-5">
       <button onClick={() => open()}>Open Connect Modal</button>
-      <Link href="/">Go to app router</Link>
-      <Link href="/other">Go to page router</Link>
+      <Link href="/">Home</Link>
+      <Link href="/other">Other</Link>
     </div>
   );
 };
