@@ -7,7 +7,7 @@ import { createWeb3Modal, defaultWagmiConfig } from '@web3modal/wagmi/react';
 import { WagmiConfig } from 'wagmi';
 import { arbitrum, mainnet } from 'wagmi/chains';
 
-const projectId = 'YOUR_PROJECT_ID';
+const projectId = '43afef0ff5a5a083bc3df1ad988a021e';
 
 const metadata = {
   name: 'Web3Modal',
