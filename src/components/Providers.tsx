@@ -1,6 +1,7 @@
 'use client';
 
 import { type ReactNode } from 'react';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 
 import { createWeb3Modal, defaultWagmiConfig } from '@web3modal/wagmi/react';
 
@@ -19,8 +20,12 @@ const metadata = {
 const chains = [mainnet, arbitrum];
 const wagmiConfig = defaultWagmiConfig({ chains, projectId, metadata });
 
+const queryClient = new QueryClient({});
+
 createWeb3Modal({ wagmiConfig, projectId, chains });
 
 export const Providers = ({ children }: { children: ReactNode }) => (
-  <WagmiConfig config={wagmiConfig}>{children}</WagmiConfig>
+  <WagmiConfig config={wagmiConfig}>
+    <QueryClientProvider client={queryClient}>{children}</QueryClientProvider>
+  </WagmiConfig>
 );
