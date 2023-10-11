@@ -1,5 +1,5 @@
 import { Header } from '@/components/Header';
-import { HydrationError } from '@/app/other/_/HydrationError';
+import { HydrationError } from '@/components/HydrationError';
 
 export default function Other() {
   return (

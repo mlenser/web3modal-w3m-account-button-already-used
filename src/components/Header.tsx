@@ -38,7 +38,8 @@ export const Header = () => {
         </Dialog.Portal>
       </Dialog.Root>
       <Link href="/">Home</Link>
-      <Link href="/other">Other</Link>
+      <Link href="/hydration-error">Hydration error</Link>
+      <Link href="/hydration-error-wagmi">Hydration error with wagmi</Link>
     </div>
   );
 };
